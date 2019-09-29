@@ -56,7 +56,7 @@ const Bio = () => {
           marginBottom: 0,
         }}
       >
-        Written by <strong>{author}</strong> who lives and works in Tokyo.
+        Written by <a href="https://www.akinobusakai.com/"><strong>{author}</strong></a> who lives and works in Tokyo.
       </p>
     </div>
   )

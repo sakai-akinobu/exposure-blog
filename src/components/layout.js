@@ -1,4 +1,6 @@
 import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
@@ -64,9 +66,18 @@ class Layout extends React.Component {
         <header>{header}</header>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <div style={{display: 'flex'}}>
+            <div style={{flex: '1'}}>
+              © {new Date().getFullYear()}, Built with
+              {` `}
+              <a href="https://www.gatsbyjs.org">Gatsby</a>
+            </div>
+            <div style={{flex: '0'}}>
+              <a href="https://github.com/sakai-akinobu/exposure-blog">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </div>
+          </div>
         </footer>
       </div>
     )
