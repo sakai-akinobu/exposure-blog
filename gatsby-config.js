@@ -3,7 +3,7 @@ module.exports = {
     title: `Exposure Blog`,
     author: `Akinobu Sakai`,
     description: `Travel and photography.`,
-    siteUrl: `https://exposure-blog.netlify.com/`,
+    siteUrl: `https://blog.akinobusakai.com/`,
   },
   plugins: [
     {
